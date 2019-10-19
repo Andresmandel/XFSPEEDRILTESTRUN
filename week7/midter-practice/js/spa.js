@@ -3,22 +3,22 @@ var app = angular.module('customersApp',['ngRoute']);
                $routeProvider.when('/',
                  {
                    controller:'CustomersController',
-                   templateUrl: 'app/views/customers.html'
+                   templateUrl: 'app/views/home.html'
                  })
-               .when('/experience',
+               .when('/contact',
                  {
                    controller: 'ExperienceController',
-                   templateUrl: 'app/views/experience.html'
+                   templateUrl: 'app/views/contact.html'
                  })
-                 .when('/request',
+                 .when('/news',
                    {
                      controller: 'RequestController',
-                     templateUrl: 'app/views/request.html'
+                     templateUrl: 'app/views/news.html'
                    })
-                .when('/dealer',
+                .when('/works',
                    {
                      controller: 'DealerController',
-                     templateUrl: 'app/views/dealer.html'
+                     templateUrl: 'app/views/works.html'
                    })
                 .when('/story',
                    {

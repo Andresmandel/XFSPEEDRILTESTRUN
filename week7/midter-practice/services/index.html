@@ -1,10 +1,10 @@
 <!doctype html>
-<html class="no-js" lang="en" dir="ltr">
+<html ng-app class="no-js" lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
+    <title>services</title>
     <link rel="stylesheet" href="../css/foundation.css">
     <link rel="stylesheet" href="../css/app.css">
 
@@ -12,6 +12,12 @@
     <link rel="stylesheet" href="css/hearder.css">
     <link rel="stylesheet" href="css/content.css">
     <link rel="stylesheet" href="../css/footer.css">
+    <!--Begin angularjs-->
+    <script src="js/vendor/angular-1.7.8/angular.min.js"></script>
+    <script src="js/vendor/angular-1.7.8/angular-animaate.min.js"></script>
+    <script src="js/vendor/angular-1.7.8/angular-rout.min.js"></script>
+
+    <!--End angularjs-->
 
     <!-- The font Awesome code below is several revisions back.
     https://stackoverflow.com/questions/14698589/fontawesome-not-available-as-a-font-family
@@ -32,14 +38,14 @@
     <span data-responsive-toggle="topbar-responsive" data-hide-for="medium">
       <button class="menu-icon" type="button" data-toggle></button>
     </span>
-    <a class="topbar-responsive-logo" href="#"><strong>About</strong></a>
+    <a class="topbar-responsive-logo" href="#"><strong>Services</strong></a>
   </div>
   <div id="topbar-responsive" class="topbar-responsive-links">
     <div class="top-bar-right">
       <ul class="menu simple vertical medium-horizontal">
-        <li><a href="../intex.html">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="services/index.html">Services</a></li>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../about/index.html">About</a></li>
+        <li><a href="#">Services</a></li>
         <li><a href="index.html#!/works">Works</a></li>
         <li><a href="index.html#!/news">News</a></li>
         <li><a href="index.html#!/contact">Contact</a></li>
@@ -82,6 +88,14 @@
     <img src="https://images.pexels.com/photos/300857/pexels-photo-300857.jpeg?h=350&auto=compress&cs=tinysrgb" alt="" />
   </div>
 </div>
+<!--Begin Angularjs-->
+<div>
+      <label>Name:</label>
+      <input type="text" ng-model="yourName" placeholder="Enter a name here">
+      <hr>
+      <h1>Hello {{yourName}}!</h1>
+    </div>
+<!--End Angularjs-->
 <!--End Content-->
 
 <!-- *Begin Footer -->
@@ -144,12 +158,12 @@
              </div>
              <div class="column">
                <ul class="menu marketing-site-footer-bottom-links">
-                 <li><a href="#">Home</a></li>
-                 <li><a href="#">About</a></li>
+                 <li><a href="../index.html">Home</a></li>
+                 <li><a href="../about/index.html">About</a></li>
                  <li><a href="#">Services</a></li>
-                 <li><a href="#">Works</a></li>
-                 <li><a href="#">News</a></li>
-                 <li><a href="#">Contact</a></li>
+                 <li><a href="index.html#!/works">Works</a></li>
+                 <li><a href="index.html#!/news">News</a></li>
+                 <li><a href="index.html#!/contact">Contact</a></li>
                </ul>
              </div>
            </div>

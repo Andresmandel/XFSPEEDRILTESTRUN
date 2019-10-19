@@ -1,10 +1,10 @@
 <!doctype html>
-<html ng-app class="no-js" lang="en" dir="ltr">
+<html ng-app="customersApp" class="no-js" lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Speed test run</title>
+    <title>test run</title>
     <link rel="stylesheet" href="css/foundation.css">
     <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet" href="css/nav.css">
@@ -12,8 +12,15 @@
     <link rel="stylesheet" href="css/content.css">
     <link rel="stylesheet" href="css/footer.css">
     <!--Begin angularjs-->
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
+    <script src="js/vendor/angular-1.7.8/angular.min.js"></script>
+    <script src="js/vendor/angular-1.7.8/angular-animate.min.js"></script>
+    <script src="js/vendor/angular-1.7.8/angular-rout.min.js"></script>
     <!--End angularjs-->
+
+    <!--Begin Datatables.net-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/zf/dt-1.10.20/datatables.min.css"/>
+    <script type="text/javascript" src="https://cdn.datatables.net/v/zf/dt-1.10.20/datatables.min.js"></script>
+    <!--End Datatables.net-->
 
     <!-- The font Awesome code below is several revisions back.
     https://stackoverflow.com/questions/14698589/fontawesome-not-available-as-a-font-family
@@ -57,7 +64,7 @@
 <!--Begin Header-->
 <div class="marketing-site-hero">
   <div class="marketing-site-hero-content">
-    <h1>Yeti Snowcone Agency</h1>
+    <h1>Home Page</h1>
     <p class="subheader">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam omnis, maxime libero natus qui minus!</p>
     <a href="#" class="round button">learn more</a>
   </div>
@@ -66,24 +73,7 @@
 
 
 <!--Begin Content-->
-<div class="marketing-site-content-section">
-  <div class="marketing-site-content-section-img">
-    <img src="http://www.qcc.cuny.edu/it/images/1116_TigerMail.jpg" alt="" />
-  </div>
-  <div class="marketing-site-content-section-block">
-    <h3 class="marketing-site-content-section-block-header">Yeti Snowcone Agency</h3>
-    <p class="marketing-site-content-section-block-subheader subheader">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam omnis, maxime libero natus qui minus!</p>
-    <a href="#" class="round button small">learn more</a>
-  </div>
-  <div class="marketing-site-content-section-block small-order-2 medium-order-1">
-    <h3 class="marketing-site-content-section-block-header">Yeti Snowcone Agency</h3>
-    <p class="marketing-site-content-section-block-subheader subheader">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam omnis, maxime libero natus qui minus!</p>
-    <a href="#" class="round button small">learn more</a>
-  </div>
-  <div class="marketing-site-content-section-img small-order-1 medium-order-2">
-    <img src="https://images.pexels.com/photos/300857/pexels-photo-300857.jpeg?h=350&auto=compress&cs=tinysrgb" alt="" />
-  </div>
-</div>
+<div ng-view></div>
 <!--Begin Angularjs-->
 <div>
       <label>Name:</label>
@@ -171,5 +161,8 @@
     <script src="js/vendor/what-input.js"></script>
     <script src="js/vendor/foundation.js"></script>
     <script src="js/app.js"></script>
+
+    <script src="js/spa.js"></script>
+
   </body>
 </html>
